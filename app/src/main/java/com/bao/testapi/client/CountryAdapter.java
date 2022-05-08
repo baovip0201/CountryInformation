@@ -40,7 +40,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryI
     public void onBindViewHolder(CountryAdapter.CountryItemViewHolder holder, int position) {
         Geoname n = countryList1.get(position);
 
-        String flagUrl="https://img.geonames.org/flags/x/"+n.getCountryCode().toLowerCase()+".gif";
+        String flagUrl="http://img.geonames.org/flags/x/"+n.getCountryCode().toLowerCase()+".gif";
         Picasso.with(c)
                 .load(flagUrl)
                 .into(holder.flag);

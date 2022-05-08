@@ -58,7 +58,8 @@ public class InforCovid extends AppCompatActivity {
         area.setText(en.format(lists.get(position).getAreaInSqKm())+" km2");
         capital.setText(lists.get(position).getCapital());
 
-        String flagUrl="https://img.geonames.org/flags/x/"+lists.get(position).getCountryCode().toLowerCase()+".gif";
+        //String flagUrl="https://img.geonames.org/flags/x/"+lists.get(position).getCountryCode().toLowerCase()+".gif";
+        String flagUrl="http://img.geonames.org/img/country/250/"+lists.get(position).getCountryCode().toUpperCase()+".png";
         Picasso.with(getApplicationContext())
                 .load(flagUrl)
                 .into(flag);
